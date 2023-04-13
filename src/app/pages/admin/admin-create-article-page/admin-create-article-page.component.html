@@ -1,0 +1,15 @@
+<p>admin-create-article-page works!</p>
+<form [formGroup]="articleForm" (ngSubmit)="onSubmit(catId)" #myForm="ngForm" >
+  <fieldset>
+    <label for="title">Title</label>
+    <input type="text" id="title" formControlName="title" />
+    <label for="content">Content</label>
+    <input type="text" id="content" formControlName="content" />
+    <label for="slug">Slug</label>
+    <input type="text" id="slug" formControlName="slug" />
+    <select name="categoryId" id="categoryId" formControlName="categoryId" [(ngModel)]="catId" >
+      <option *ngFor="let category of categories" [ngValue]="category.id" >{{category.name}}  </option>
+    </select>
+</fieldset>
+  <button type="submit">Soumettre</button>
+</form>

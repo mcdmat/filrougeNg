@@ -1,0 +1,26 @@
+table,
+td {
+    border: 1px solid #333;
+}
+
+thead,
+tfoot {
+    background-color: #333;
+    color: #fff;
+}
+
+table{
+    width: 100vw;
+}
+td{
+    width: 33%;
+}
+#one {
+    background-color: rgba(153, 205, 50, 0.636);
+}
+#two{
+    background-color: rgba(255, 127, 80, 0.599);
+}
+#three {
+    background-color: rgba(127, 255, 212, 0.682);
+}

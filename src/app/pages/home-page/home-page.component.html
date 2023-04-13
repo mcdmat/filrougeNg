@@ -1,0 +1,2 @@
+<p>Les 3 plus récents</p>
+<p *ngFor="let article of listOfArticles" [routerLink]="['/articles', article.id]">Titre :{{article.title}} <br> Contenu {{ article.content}} <br>Date de création {{ article. createdAt}} <br>Date de mise à jour {{ article.updateAt}}</p>

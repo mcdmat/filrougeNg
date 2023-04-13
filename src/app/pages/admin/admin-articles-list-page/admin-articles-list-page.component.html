@@ -1,0 +1,15 @@
+<p>Admin Liste</p>
+  <table *ngFor="let article of listOfArticles" [routerLink]="['../articles', article.id]">
+  <thead>
+      <tr>
+          <th colspan="3">Titre : {{article.title}}</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td id="one">Contenu<br>{{ article.content}}</td>
+          <td id="two">Date de création<br>{{ article. createdAt | date:"dd/mm/YYY à HH:MM"}}</td>
+          <td id="three">Date de mise à jour<br>{{ article.updateAt | date:"dd/mm/YYY à HH:MM"}}</td>
+      </tr>
+  </tbody>
+</table>
